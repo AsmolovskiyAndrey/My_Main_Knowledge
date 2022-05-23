@@ -5,7 +5,7 @@ body{
 }
 .Div{
     max-width: 1500px; /*Максимальная ширина основного блока*/
-    height: 1800px; /*Высота основного блока*/
+    height: 1500px; /*Высота основного блока*/
     margin: auto; /*выровнять основной блок по центру экрана*/
     box-shadow: 6px 6px 20px rgba(124, 9, 239, 0.8); /*тень от основного блока, 0.8 - насыщенность*/
     display: flex; /*Расположение блоков*/
@@ -54,20 +54,23 @@ th, td { /*Внутренние линии в таблице*/
     height: 100px;
     background: blue;
     border: 1px solid white;
+
 }
 .Red{
     background: rgb(232, 14, 47);
     order: -1; /*подвинули ящик влево от того места где он*/
-    flex-basis: 20%; /*увеличит контент на кол-во процентов */
+    width: 200px; /* Увеличил ящик в 2-а раза*/
+    height: 200px;
 }
-button {
+button { /*Кнопка*/
+    margin: 30px auto;
     width: 200px;
     height: 100px;
     border: 1px solid black;
-    padding: 8px 16px;
+    padding: 8px 16px; /*Внутренний отступ по 8 верх,низ и по 16 слева,справа*/
     background: #8fd864;
   }
   
-  button:hover {
+  button:hover {/*Кнопка ведёт себя после наведения на неё*/
     background: #e9e9e9;
   }
