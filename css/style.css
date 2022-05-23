@@ -1,11 +1,17 @@
-p{
-margin-top: 20px;
-margin-bottom: 20px;
-height: 550px;
-width: 550px;
-margin: auto;
-padding: 15px 20px 0 20px;
-padding-left: 10px;
-margin-left: 10px;
-
+body{
+    
+    font-family: 'Montserrat', sans-serif; /* Главный шрифт в программе */
+    background-color: #abb5c5; /*Цвет подложки*/
+}
+.Div{
+    max-width: 1500px; /*Максимальная ширина основного блока*/
+    margin: auto; /*выровнять основной блок по центру экрана*/
+    box-shadow: 6px 6px 20px rgba(124, 9, 239, 0.8); /*тень от основного блока, 0.8 - насыщенность*/
+}
+h1{ /*Характерситики для всех h1 заголовков*/
+    font-style: normal; /*Стиль текста (italic если с наклоном)*/
+    font-weight: 700; /*толщина шрифта*/
+    font-size: 50px; /*Высота шрифта*/
+    color: #0c65f3;/*Цвет текста*/
+    text-align: center; /*Текст по центру*/
 }
