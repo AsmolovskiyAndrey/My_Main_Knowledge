@@ -5,8 +5,29 @@ body{
 }
 .Div{
     max-width: 1500px; /*Максимальная ширина основного блока*/
+    height: 1800px; /*Высота основного блока*/
     margin: auto; /*выровнять основной блок по центру экрана*/
     box-shadow: 6px 6px 20px rgba(124, 9, 239, 0.8); /*тень от основного блока, 0.8 - насыщенность*/
+    display: flex; /*Расположение блоков*/
+    flex-direction: column; /*row вместо column и будет всё по вертикали (reverse - в обратном порядке)*/
+}
+.Image_Box{
+    /* margin: 30px auto 70px; Картинка отступ сверху 30,снизу 70 и по бокам по центру */
+    text-decoration: underline; /* подчёркивание текста под картинкой */
+    width: 500px; /*Размер для блока с картинкой*/
+    height: 334px; /*Размер для блока с картинкой*/
+}
+figure{
+    margin: 4px 10px 2px 0px;
+    float: left; /* Выравнивание текста по правому краю от картинки */
+    border: 1px solid black; /* Параметры рамки вокруг картинки*/
+    padding: 10px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+ }
+.Image{ 
+    width: 500px; /*Размер для картинки*/
+    height: 334px; /*Размер для картинки*/
 }
 h1{ /*Характерситики для всех h1 заголовков*/
     font-style: normal; /*Стиль текста (italic если с наклоном)*/
@@ -15,3 +36,38 @@ h1{ /*Характерситики для всех h1 заголовков*/
     color: #0c65f3;/*Цвет текста*/
     text-align: center; /*Текст по центру*/
 }
+h6{
+    margin: 30px 20px 30px 20px; /*Наружный отступ вверх,вправо,вниз,влево. */
+    margin-top: 50px; /*Наружный отступ вверх*/
+    padding: 30px 30px 50px 50px; /*Внутренний отступ вверх,вправо,вниз,влево. */
+    background: #69c093;
+}
+th, td { /*Внутренние линии в таблице*/
+    border: 1px solid black;
+ }
+.Boxes{
+    display: flex;
+    justify-content: space-around
+}
+.Box{ /*размеры ящиков с цветом заполнения и с цветом границы*/
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border: 1px solid white;
+}
+.Red{
+    background: rgb(232, 14, 47);
+    order: -1; /*подвинули ящик влево от того места где он*/
+    flex-basis: 20%; /*увеличит контент на кол-во процентов */
+}
+button {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 8px 16px;
+    background: #8fd864;
+  }
+  
+  button:hover {
+    background: #e9e9e9;
+  }
